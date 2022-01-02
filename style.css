@@ -9,68 +9,88 @@ html {
   background-position: left;
   background-position-y: 25%;
 }
-
 body {
   color: white;
   font-family: 'EB Garamond', serif;
 }
-
 .main {
   margin: 5em;
+  margin-top: 2em;
   flex-direction: row;
-  /* flex-direction: column; */
   display: flex;
 }
-.trailer {
-  margin-left: auto;
-  order: 2;
+#title {
+  font-size: 4em;
+  margin-bottom: 1px;
+  line-height: 1em;
 }
-
+#subtitle {
+  font-size: 2em;
+  margin-top: 5px;
+}
+#desc {
+  font-size: 1em;
+  /* width: 75%; */
+  max-width: 30em;
+  min-width: 3em;
+  font-family: sans-serif;
+}
+.social-links {
+  margin: 1em;
+  margin-left: 0;
+  flex-direction: row;
+  display: flex;
+  gap: 2em;
+}
+#facebook {
+  background-image: url("./assets/facebook.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  filter: invert(100%);
+}
+#instagram {
+  background-image: url("./assets/instagram.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  filter: invert(100%);
+}
+#twitter-toso {
+  background-image: url("./assets/twitter.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  filter: invert(100%);
+}
+.trailer {
+  margin-top: 3em;
+}
 #trailer {
   padding: 14em;
   padding-top: 1em;
   position: relative;
 }
-
 @media (orientation: portrait) {
   html {
     background-position-x: 25%;
   }
   .main {
-    /* margin: 2em; */
+    margin: 2em;
+    margin-top: 1em;
     flex-direction: column;
   }
-}
-
-@media (max-width: 965px) {
   .trailer {
-    margin: auto;
+    margin-top: 0;
   }
-
-  /* #trailer { */
-  /*   padding: 12em; */
-  /*   padding-top: 1em; */
-  /*   padding-left: 1em; */
-  /* } */
 }
-
-
 @media (max-width: 600px) {
-  .trailer {
-    margin: auto;
-  }
-
   #trailer {
     padding: 12em;
     padding-top: 1em;
     padding-left: 1em;
   }
 }
-
-/* @media (max-width: 400px) { */
-/*   #trailer { */
-/*     padding: 8em; */
-/*     padding-top: 1em; */
-/*     padding-left: 1em; */
-/*   } */
-/* } */
