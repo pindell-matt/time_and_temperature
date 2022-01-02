@@ -23,17 +23,24 @@ body {
   font-size: 4em;
   margin-bottom: 1px;
   line-height: 1em;
+  color: #fdc371;
 }
 #subtitle {
   font-size: 2em;
   margin-top: 5px;
 }
 #desc {
+  margin-top: 1em;
+
   font-size: 1em;
   /* width: 75%; */
   max-width: 30em;
   min-width: 3em;
   font-family: sans-serif;
+  line-height: 1.35em;
+}
+#directed {
+  padding-top: 1em;
 }
 .social-links {
   margin: 1em;
@@ -87,7 +94,15 @@ body {
     margin-top: 0;
   }
 }
+@media (max-width: 950px) {
+  .trailer {
+    margin-top: 9em;
+  }
+}
 @media (max-width: 600px) {
+  .trailer {
+    margin-top: 9em;
+  }
   #trailer {
     padding: 12em;
     padding-top: 1em;
