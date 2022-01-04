@@ -16,8 +16,10 @@ body {
 .main {
   margin: 5em;
   margin-top: 2em;
-  flex-direction: row;
-  display: flex;
+  /* flex-direction: column; */
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  float: right;
 }
 #title {
   font-size: 4em;
