@@ -177,6 +177,9 @@ body {
   .poster {
     width: 8rem;
   }
+  .description {
+    width: 20rem;
+  }
   #trailer {
     padding: 12em;
     padding-top: 1em;
