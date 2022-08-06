@@ -40,62 +40,96 @@
     <link rel="manifest" href="/site.webmanifest">
   </head>
   <body>
-    <div class="">
-      <div class="main">
-        <div id="text">
-          <h1 id="title">
-            Time & Temperature
-          </h1>
-          <h3 id="subtitle">
-            A Short Film by Justin Foreman
-          </h3>
-          <div id="desc">
-            700 years of tradition in the making, this intimate short documentary portrait follows Venetian Maestro Gianni Toso, a lifelong student of glassblowing.
+    <header class="header">
+      <section class="title">
+        TIME <span class="ampersand">&</span>
+      </section>
+      <section class="title">
+        TEMPERATURE
+      </section>
+      <section class="subtitle">
+        A FILM BY JUSTIN FOREMAN
+      </section>
+    </header>
+    <section class="laurels-container">
+      <section class="laurels">
+        <img
+          class="laurel"
+          src="./assets/laurels/amdoc.png"
+          alt="Official Selection American Documentary and Animation Film Festival 2022"
+        >
+        <img
+          class="laurel"
+          src="./assets/laurels/big_sky.png"
+          alt="Official Selection Big Sky Documentary Film Festival 2022"
+        >
+        <img
+          class="laurel"
+          src="./assets/laurels/florida.png"
+          alt="Official Selection Florida Film Festival 2022"
+        >
+      </section>
+    </section>
+    <section class="trailer">
+      <article id="trailer">
+        <iframe title="vimeo-player"
+          src="https://player.vimeo.com/video/670069938?h=16ca78f4b7"
+          width="640"
+          height="360"
+          frameborder="0"
+          style="position:absolute;top:0;left:0;width:100%;height:100%;"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </article>
+    </section>
+    <section class="details">
+      <article class="poster-container">
+        <a tabindex="1" class="poster__link">
+          <img
+            class="poster"
+            src="assets/time&temp_poster.png"
+            alt="Film Poster for Time & Temperature"
+          >
+        </a>
+      </article>
+      <article class="description">
+        <header class="description__about">ABOUT THE FILM</header>
+        <section class="description__body">
+          <div>
+            <span class="emph">700</span> years of tradition in the making, this intimate short documentary portrait follows Venetian Maestro Gianni Toso, a lifelong student of glassblowing.
+          </div>
+          <div>
             One-of-a-kind glassworks are only part of the maestro’s story, as he presents perspectives on life, learning, and passing the torch to the next generation of young American glassblowers.
           </div>
-          <div class="social-links">
-            <a
-              id="facebook"
-              class="link"
-              href="https://www.facebook.com/timeandtemperaturedoc"
-              target="_blank"
-            ></a>
-            <a
-              id="instagram"
-              class="link"
-              href="https://www.instagram.com/timeandtempdoc/"
-              target="_blank"
-            ></a>
-            <a
-              id="twitter-toso"
-              class="link"
-              href="https://twitter.com/TimeandTempDoc"
-              target="_blank"
-            ></a>
-            <a
-              id="survey"
-              class="link"
-              href="https://docs.google.com/forms/d/1DfEavirU5Shy-a4GTj3-q-qUxwbHBBO1ntVPKxS1SMM/edit?usp=sharing"
-              target="_blank"
-              >Film Survey for Viewers</a>
-          </div>
-        </div>
-        <div class="trailer">
-          <div id="trailer">
-            <iframe title="vimeo-player" 
-              src="https://player.vimeo.com/video/670069938?h=16ca78f4b7"
-              width="640"
-              height="360"
-              frameborder="0"
-              style="position:absolute;top:0;left:0;width:100%;height:100%;"
-              loading="lazy"
-              allowfullscreen>
-            </iframe>
-          </div>
-          <script src="https://player.vimeo.com/api/player.js"></script>
-        </div>
-      </div>
-    </div>
+        </section>
+        <section class="social-links">
+          <a
+            id="facebook"
+            class="link"
+            href="https://www.facebook.com/timeandtemperaturedoc"
+            target="_blank"
+          ></a>
+          <a
+            id="instagram"
+            class="link"
+            href="https://www.instagram.com/timeandtempdoc/"
+            target="_blank"
+          ></a>
+          <a
+            id="twitter-toso"
+            class="link"
+            href="https://twitter.com/TimeandTempDoc"
+            target="_blank"
+          ></a>
+          <a
+            id="survey"
+            class="link"
+            href="https://docs.google.com/forms/d/1DfEavirU5Shy-a4GTj3-q-qUxwbHBBO1ntVPKxS1SMM/edit?usp=sharing"
+            target="_blank"
+          >Survey for Film Viewers</a>
+        </section>
+      </article>
+    </section>
   </body>
 </html>
-
