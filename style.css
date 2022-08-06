@@ -152,7 +152,7 @@ body {
   background-image: url("./assets/social/mail.svg");
   filter: none;
 }
-#survey {
+a {
   color: black;
 }
 #trailer {
