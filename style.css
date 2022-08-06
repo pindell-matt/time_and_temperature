@@ -148,6 +148,10 @@ body {
 #twitter-toso {
   background-image: url("./assets/social/twitter.svg");
 }
+#email {
+  background-image: url("./assets/social/mail.svg");
+  filter: none;
+}
 #survey {
   color: black;
 }
