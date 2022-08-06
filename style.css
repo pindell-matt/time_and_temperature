@@ -51,6 +51,7 @@ body {
   align-items: center;
   align-content: center;
   width: 37rem;
+  gap: 1rem;
 }
 .laurel {
   height: 6rem;
@@ -71,6 +72,7 @@ body {
 }
 .poster {
   width: 20rem;
+  filter: drop-shadow(1px 1px 3px grey);
 }
 .description {
   width: 30rem;
@@ -138,13 +140,13 @@ body {
   filter: invert(100%);
 }
 #facebook {
-  background-image: url("./assets/facebook.svg");
+  background-image: url("./assets/social/facebook.svg");
 }
 #instagram {
-  background-image: url("./assets/instagram.svg");
+  background-image: url("./assets/social/instagram.svg");
 }
 #twitter-toso {
-  background-image: url("./assets/twitter.svg");
+  background-image: url("./assets/social/twitter.svg");
 }
 #survey {
   color: black;
