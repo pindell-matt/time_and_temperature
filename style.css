@@ -119,36 +119,25 @@ body {
   align-content: center;
   gap: 1.25rem;
 }
-#facebook {
+.link {
   background-color: white;
-  background-image: url("./assets/facebook.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  height: 30px;
-  width: 30px;
+  height: 2rem;
+  width: 2rem;
   filter: invert(100%);
+}
+#facebook {
+  background-image: url("./assets/facebook.svg");
 }
 #instagram {
-  background-color: white;
   background-image: url("./assets/instagram.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 30px;
-  width: 30px;
-  filter: invert(100%);
 }
 #twitter-toso {
-  background-color: white;
   background-image: url("./assets/twitter.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 30px;
-  width: 30px;
-  filter: invert(100%);
 }
 #survey {
   color: black;
-  text-decoration-color: var(--accent-color)
 }
 #trailer {
   padding: 16rem;
@@ -163,8 +152,7 @@ body {
     display: none;
   }
   .description {
-    width: 20rem;
-    padding: 1rem;
+    width: fit-content;
   }
 }
 @media (max-width: 600px) {
@@ -176,9 +164,6 @@ body {
   }
   .poster {
     width: 8rem;
-  }
-  .description {
-    width: 20rem;
   }
   #trailer {
     padding: 12em;
