@@ -109,7 +109,7 @@ body {
   left: 0;
   right: 0;
   margin: 0 auto;
-  z-index:1;
+  z-index: 1;
 }
 .poster__link img {
   display: block;
@@ -156,6 +156,7 @@ body {
   filter: none;
 }
 a {
+  text-underline-offset: 3px;
   color: black;
 }
 #trailer {
