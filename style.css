@@ -71,6 +71,7 @@ body {
   width: 20rem;
 }
 .poster {
+  z-index: 999;
   width: 20rem;
   filter: drop-shadow(1px 1px 3px grey);
 }
@@ -126,6 +127,14 @@ body {
   z-index: 1;
   cursor: default;
 }
+.name {
+  a {
+    color: var(--accent-color);
+  }
+}
+figcaption {
+  font-style: italic;
+}
 .social-links {
   flex-direction: row;
   display: flex;
@@ -168,6 +177,59 @@ a {
   -o-animation: fadeIn ease 2s;
   -ms-animation: fadeIn ease 2s;
 }
+
+.tabs {
+  z-index: 0;
+  position: relative;
+  min-height: 25rem; /* This part sucks */
+  clear: both;
+  /* margin: 25px 0; */
+}
+.tab {
+  float: left;
+}
+.tab label {
+  /* padding: 10px; */
+  /* border: 1px solid #ccc; */
+  margin-left: -1px;
+  position: relative;
+  left: 1px;
+}
+.tab [type="radio"] {
+  opacity: 0;
+}
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  /* background: white; */
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  overflow: scroll;
+}
+.content > * {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.6s ease;
+}
+/* [type="radio"]:focus ~ label { */
+/*   ouline: 2px solid blue; */
+/* } */
+[type="radio"]:checked ~ label {
+  /* background: white; */
+  border-bottom: 1.25px solid var(--accent-color);
+  z-index: 2;
+}
+[type="radio"]:checked ~ label ~ .content {
+  z-index: 1;
+}
+[type="radio"]:checked ~ label ~ .content > * {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 @media (max-width: 950px) {
   .laurels {
     flex-wrap: wrap;
@@ -175,14 +237,18 @@ a {
   .details {
     flex-direction: column;
     padding-top: 0;
-    width: 70%;
     align-self: center;
+    /* width: 70%; */
+
+    width: 90vw;
   }
   .poster-container {
     display: none;
   }
   .description {
-    width: fit-content;
+    /* width: fit-content; */
+
+    width: 100vw;
   }
 }
 @media (max-width: 500px) {
@@ -224,7 +290,6 @@ a {
     padding-left: 1em;
   }
 }
-
 
 @keyframes fadeIn {
   0% {opacity:0;}
